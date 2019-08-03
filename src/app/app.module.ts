@@ -8,6 +8,7 @@ import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { MatToolbarModule, MatCardModule, MatButtonModule } from '@angular/material';
 import { HeroService } from './services/hero.service';
 import { SelectedHeroPipe } from './pipes/selected-hero.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { SelectedHeroPipe } from './pipes/selected-hero.pipe';
     BrowserModule,
     MatToolbarModule,
     MatCardModule, MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]
