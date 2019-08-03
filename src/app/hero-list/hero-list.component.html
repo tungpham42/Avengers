@@ -1,0 +1,10 @@
+<mat-card style="float: left; width: 200px; padding: 24px; margin: 12px;" *ngFor="let hero of heroes">
+    <img style="width: 128px; height: 128px; display: inherit; margin: auto;" mat-card-image src="{{hero.avatarUrl}}" />
+    <mat-card-header style="display: block; text-align: center; width: 100%;">
+        <mat-card-title>{{hero.name}}</mat-card-title>
+        <mat-card-subtitle>{{hero.gender}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions style="display: block; text-align: center; width: 100%;">
+        <a mat-raised-button routerLink="/hero-details/{{hero.id}}">View Details</a>
+    </mat-card-actions>
+</mat-card>

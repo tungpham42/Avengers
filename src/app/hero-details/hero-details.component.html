@@ -1,0 +1,13 @@
+<mat-card style="float: left; width: 300px; padding: 24px; margin: 12px;" *ngFor="let hero of (heroes | selectedHero: id)">
+    <img style="width: 256px; height: 256px; display: inherit; margin: auto;" mat-card-image src="{{hero.avatarUrl}}" />
+    <mat-card-header style="display: block; text-align: center; width: 100%;">
+        <mat-card-title>{{hero.name}}</mat-card-title>
+        <mat-card-subtitle>{{hero.gender}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content style="display: block; text-align: center; width: 100%;">
+        <p>{{hero.ability}}</p>
+    </mat-card-content>
+    <mat-card-actions style="display: block; text-align: center; width: 100%;">
+        <a mat-raised-button routerLink="/">Go to Home</a>
+    </mat-card-actions>
+</mat-card>
