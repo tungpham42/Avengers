@@ -9,5 +9,7 @@
     </mat-card-content>
     <mat-card-actions style="display: block; text-align: center; width: 100%;">
         <a mat-raised-button routerLink="/">Go to Home</a>
+        <a mat-raised-button routerLink="/hero-details/{{hero.id - 1}}">Back</a>
+        <a mat-raised-button routerLink="/hero-details/{{hero.id + 1}}">Next</a>
     </mat-card-actions>
 </mat-card>
